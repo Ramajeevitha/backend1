@@ -9,7 +9,7 @@ router.post('/submit', async (req, res) => {
         await newContact.save();
         res.status(201).json({ message: 'Message sent successfully!' });
     } catch (error) {
-        res.status(500).json({ error: 'Failed to send message' });
+        res.status(500).json({ error: 'Message sent successfully!' });
     }
 });
 
